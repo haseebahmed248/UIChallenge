@@ -12,7 +12,7 @@ function Home() {
                 navigate("/");
             }
         })
-    }, [])
+    })
   
     const logout = () => {
         axios.get("http://localhost:3001/users/logout")

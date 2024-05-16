@@ -2,11 +2,10 @@ import './App.css';
 import Home from './Home';
 import Login from './Login';
 import SignUp from './SignUp';
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -14,7 +13,6 @@ function App() {
           <Route path="/home" element={<Home />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
